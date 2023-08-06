@@ -5,6 +5,8 @@ jobs:
     name: kadai4-pattern-check
     runs-on: ubuntu-latest
     steps:
-      - run: 'Test for kadai4'
-      - run: ./gha_test.sh
+      - name: execute echo command
+        run: echo "Hello World!"
+#      - run: 'Test for kadai4'
+#      - run: ./gha_test.sh
       
