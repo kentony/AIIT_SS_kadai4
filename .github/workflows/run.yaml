@@ -1,11 +1,17 @@
 name: kadai4-actions
 on: push
 jobs:
-  kadai4-pattern-check:
-    name: kadai4-pattern-check
+  kadai4-test:
+    name: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: echo 'Test for kadai4'
-      - run: pwd
-      - run: sh /gha_test.sh
+      - name: execute echo command
+        run: echo "Hello World!"
+      - name: pwd
+        run: pwd
+      - name: ls
+        run: ls -la
+        working-directory: /
+      - name: gha_test
+        run: sh ./gha_test.sh

@@ -1,9 +1,0 @@
-name: kadai4-actions
-on: push
-jobs:
-  kadai4-pattern-check:
-    name: kadai4-pattern-check
-    runs-on: ubuntu-latest
-    steps:
-      - name: execute echo command
-        run: echo "Hello World!"

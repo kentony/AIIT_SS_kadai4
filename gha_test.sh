@@ -3,7 +3,8 @@
 # Declarate variable. Shorten for '/tmp/''.
 tmp=/tmp/$$
 
-function ERROR_EXIT () {
+ERROR_EXIT 
+{
     echo "$1" >&2 
     cat $tmp-error
     rm -f $tmp-*
